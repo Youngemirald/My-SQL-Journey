@@ -1,0 +1,54 @@
+-- Create Database Chidi_Store;
+-- Use Chidi_Store;
+
+-- CREATE TABLE Products (
+--   ProductID INT PRIMARY KEY,
+--   ProductName VARCHAR(50),
+--   Category VARCHAR(30),
+--   UnitPrice INT
+--  );
+--  -- CREATE TABLE Customers (
+--   CustomerID INT PRIMARY KEY,
+--   CustomerName VARCHAR(50),
+--   Email VARCHAR(100)
+--  );
+--  CREATE TABLE Transactions (
+--   TransactionID INT PRIMARY KEY,
+--   CustomerID INT,
+--   ProductID INT,
+--   Quantity INT,
+--   FOREIGN KEY (CustomerID) 
+-- REFERENCES 
+-- Customers(CustomerID),
+--   FOREIGN KEY (ProductID) 
+-- REFERENCES Products(ProductID)
+--  );
+--  INSERT INTO Products (ProductID, ProductName, Category, UnitPrice) VALUES
+--  (1, 'Indomie', 'Food', 120),
+--  (2, 'Milo', 'Beverages', 450),
+--  (3, 'Dettol', 'Toiletries', 300),
+--  (4, 'Peak Milk', 'Beverages', 500),
+--  (5, 'Cornflakes', 'Food', 700);
+--  INSERT INTO Customers (CustomerID, CustomerName, Email) VALUES
+--  (1, 'Chukwudi Okoro', 'chukwudi@gmail.com'),
+--  (2, 'Amina Bello', 'amina.bello@yahoo.com'),
+--  (3, 'Segun Adeyemi', 'segun.adeyemi@naija.ng'),
+--  (4, 'Linda Eze', 'linda.eze@mail.com');
+--  INSERT INTO Transactions (TransactionID, CustomerID, ProductID, Quantity) VALUES
+--  (1, 1, 1, 5),
+--  (2, 2, 2, 2),
+--  (3, 1, 4, 1),
+--  (4, 3, 1, 3),
+--  (5, 4, 3, 2),
+--  (6, 1, 1, 2),
+--  (7, 3, 5, 1),
+--  (8, 2, 1, 1);
+-- insert INTO Products (ProductID, ProductName, Category, UnitPrice)
+--  VALUES (104, 'Milo', 'Beverages', 450);
+
+--select * 
+-- from products;
+
+-- Select productID, sum(Quantity) as Total_sold
+-- from Transactions
+-- group by productID
